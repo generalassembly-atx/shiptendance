@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pirate Editor</title>
+  </head>
+  <body>
+    <h1>Edit a Pirate's Information</h1>
+    <form action="/pirates/<%= pirate._id %>" method="POST">
+    <input type="hidden" name="_method" value="PATCH">
+
+    Name: <input type="text" name="name" value="<%= pirate.name %>">
+    Catchphrase: <textarea name="catchphrase" ><%= pirate.catchphrase %></textarea>
+
+    <input type="submit" value="Update A Pirate's Info!"/>
+  </form>
+  </body>
+</html>
