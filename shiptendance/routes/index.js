@@ -41,7 +41,7 @@ router.get('/:id', function(req, res, next){
 });
 
 router.get('/:id/edit', function(req, res, next){
-  // get edit recipe form
+  // get edit pirate form
   var id = req.params.id;
   Pirate.findOne({_id: id }, function(err, pirate){
     if (err) console.log(err);
