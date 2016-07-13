@@ -51,3 +51,8 @@ Your application should have the following routes:
 * GET `/pirates/:id/edit`: form to edit a pirate
 * PATCH `/pirates/:id`: updates a pirate
 * DELETE `/pirates/:id`: deletes a pirate
+
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
