@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1><%= pirate.name %></h1>
+  <p><%= pirate.ingredients %></p>
+
+  <form action="/pirates/<%= pirate._id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="DELETE THIS PIRATE!">
+  </form>
+</body>
+</html>
