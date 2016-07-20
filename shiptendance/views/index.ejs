@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h2>Tuyos Piratas:</h2>
+    <% pirates.forEach(function(pirate) { %>
+      <a href="/pirates/<%= pirate._id %>"><h3><%= pirate.name %></h3></a>
+      <p><%= pirate.catchPhrase %></p>
+      <img src= "<%= pirate.image_url %>" alt="<%= pirate.name %>">
+    <% }) %>
+  </body>
+</html>
