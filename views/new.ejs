@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h2>Add a New Pirate</h2>
+
+    <form action="/pirates" method="post">
+      Name: <input type="text" name="name">
+      Catch Phrase: <input type="text" name="catch_phrase">
+
+          <input type="submit" value="Add Pirate!"/>
+    </form>
+  </body>
+</html>
