@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <% pirates.forEach(function(pirate) { %>
+    <div class="pirate">
+      <a href="/<%= pirate._id %>"><h3><%= pirate.name %></h3></a>
+      <p><%= pirate.catchphrase %></p>
+    </div>
+    <% }) %>
+  </body>
+</html>

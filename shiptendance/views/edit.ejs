@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Pirate</title>
+</head>
+<body>
+
+  <form action="/<%= pirate._id %>" method="POST">
+    <input type="hidden" name="_method" value="PATCH">
+
+    Name: <input type="text" name="name" value="<%= pirate.name %>">
+    Catchphrase: <input type="text" name="catchphrase" value="<%= pirate.catchphrase %>">
+
+    <input type="submit" value="Update Pirate!"/>
+  </form>
+</body>
+</html>
